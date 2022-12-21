@@ -64,7 +64,7 @@ public class Author {
                 "id=" + id +
                 ", firstName='" + firstName + '\'' +
                 ", lastName='" + lastName + '\'' +
-                ", books=" + books +
+                //", books=" + books + -We want to remove this to prevent an infinite loop (circular reference)
                 '}';
     }
 
