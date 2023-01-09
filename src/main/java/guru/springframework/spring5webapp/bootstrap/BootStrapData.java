@@ -27,39 +27,46 @@ public class BootStrapData implements CommandLineRunner {
 
         System.out.println("Started in Bootstrap");
 
-        Publisher publisher = new Publisher();
-        publisher.setName("SFG Publishing");
-        publisher.setCity("St Petersburg");
-        publisher.setState("FL");
+        Publisher bantham = new Publisher();
+        bantham.setName("Bantam Spectra");
+        bantham.setCity("New York City");
+        bantham.setState("NY");
 
-        publisherRepository.save(publisher);
+        Publisher bloomsbury = new Publisher();
+        bloomsbury.setName("Bloomsbury");
+        bloomsbury.setCity("London");
+        bloomsbury.setState("N/A");
+
+        publisherRepository.save(bantham);
+        publisherRepository.save(bloomsbury);
         System.out.println("Publisher Count: " + publisherRepository.count());
 
-        Author eric = new Author("Eric", "Evans");
-        Book ddd = new Book("Domain Driven Design", "123123");
-        eric.getBooks().add(ddd);
-        ddd.getAuthors().add(eric);
+        Author george = new Author("George", "Martin");
+        Book GoT = new Book("A Game of Thrones", "0-553-10354-7");
+        george.getBooks().add(GoT);
+        GoT.getAuthors().add(george);
 
-        ddd.setPublisher(publisher);
-        publisher.getBooks().add(ddd);
+        GoT.setPublisher(bantham);
+        bantham.getBooks().add(GoT);
 
-        authorRepository.save(eric);
-        bookRepository.save(ddd);
-        publisherRepository.save(publisher);
+        authorRepository.save(george);
+        bookRepository.save(GoT);
+        publisherRepository.save(bantham);
 
-        Author rod = new Author("Rod", "Johnson");
-        Book noEJB = new Book("J2EE Development without EJB", "3939459459");
-        rod.getBooks().add(noEJB);
-        noEJB.getAuthors().add(rod);
+        Author JKR = new Author("Joanne", "Rowling");
+        Book HPPS = new Book("Harry Potter and the Philosopher's Stone", "978-0-7475-3269-9");
+        JKR.getBooks().add(HPPS);
+        HPPS.getAuthors().add(JKR);
 
-        noEJB.setPublisher(publisher);
-        publisher.getBooks().add(noEJB);
+        HPPS.setPublisher(bloomsbury);
+        bloomsbury.getBooks().add(HPPS);
 
-        authorRepository.save(rod);
-        bookRepository.save(noEJB);
-        publisherRepository.save(publisher);
+        authorRepository.save(JKR);
+        bookRepository.save(HPPS);
+        publisherRepository.save(bloomsbury);
 
         System.out.println("Number of Books: " + bookRepository.count());
-        System.out.println("Publisher Number of Books: " + publisher.getBooks().size());
+        System.out.println("Bloomsbury Number of Books: " + bloomsbury.getBooks().size());
+        System.out.println("Bantham Number of Books: " + bantham.getBooks().size());
     }
 }
