@@ -4,7 +4,7 @@
     </a>
     <h3 align="center">spring5webapp</h3>
     <p align="center">
-        Tergel Enkhtur
+        By Tergel Enkhtur
     </p>
 </p>
 
