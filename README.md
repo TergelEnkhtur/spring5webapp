@@ -1,7 +1,7 @@
 <!-- PROJECT -->
 <br />
 <p align="center">
-    <h3 align="center">spring5webapp</h3>
+    <h3 align="center">Spring 5 Web App</h3>
     <p align="center">
         By Tergel Enkhtur
     </p>
@@ -26,10 +26,6 @@
 ## About The Project
 
 Starter Spring Boot 3.0.1 / Spring Framework 5 Web Application
-
-•	[Homepage](https://tergelenkhtur.github.io/spring5webapp/)
-•	[Author List](https://tergelenkhtur.github.io/spring5webapp/src/main/resources/templates/authors/list.html)
-•	[Book List](https://tergelenkhtur.github.io/spring5webapp/src/main/resources/templates/books/list.html)
 
 ![books](https://user-images.githubusercontent.com/78391043/211244310-f6915b34-3fdd-4009-b983-188297b86b68.png)
 
