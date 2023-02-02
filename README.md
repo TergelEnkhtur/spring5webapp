@@ -5,7 +5,6 @@
     <p align="center">
         By Tergel Enkhtur
     </p>
-</p>
 
 <!-- TABLE OF CONTENTS -->
 <details open="open">
