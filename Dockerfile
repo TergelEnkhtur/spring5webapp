@@ -12,4 +12,4 @@ FROM openjdk:8-jdk-slim
 COPY --from=build /target/spring5webapp-0.0.1-SNAPSHOT.jar spring5webapp.jar
 # ENV PORT=8080
 EXPOSE 8080
-ENTRYPOINT ["java","-jar","portfoliowebsite.jar"]
+ENTRYPOINT ["java","-jar","spring5webapp.jar"]
