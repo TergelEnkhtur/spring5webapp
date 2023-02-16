@@ -24,7 +24,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Starter Spring Boot 3.0.1 / Spring Framework 5 Web Application
+Starter Spring Boot 2.7.2 / Spring Framework 5 Web Application
 
 ![books](https://user-images.githubusercontent.com/78391043/211244310-f6915b34-3fdd-4009-b983-188297b86b68.png)
 
